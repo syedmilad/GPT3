@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {people,ai} from "../../assets"
 import "./Header.css"
 const Header = () => {
+  const [toggleMenu,setToggleMenu] = useState(false)
   return (
     <div className='gpt3__header section__padding' id='home' >
       <div className='gpt3__header-content'>
@@ -12,6 +13,14 @@ const Header = () => {
         <div className='gpt3__header-content_input' >
           <input type="text" placeholder='Enter Email Address' />
           <button type='button'>Get Started</button>
+
+          {toggleMenu && (
+            <div className='gpt__header-links'>
+                  <p><a href="">Home</a></p>
+                  <p><a href="">About</a></p>
+                  <p><a href="">Contact Us</a></p>
+            </div>
+          )}
         </div>
         <div className='gpt3__header-content_people' >
           <img src={people} alt="people" />
