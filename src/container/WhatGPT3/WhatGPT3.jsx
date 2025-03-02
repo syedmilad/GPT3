@@ -1,6 +1,6 @@
 import React from 'react';
-import './whatGPT3.css';
 import { Feature } from '../../components';
+import './whatgpt3.css';
 
 const WhatGPT3 = () => (
   <div className="gpt3__whatgpt3 section__margin" id="wgpt3">
