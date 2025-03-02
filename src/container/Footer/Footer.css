@@ -1,7 +1,7 @@
 .gpt3__footer {
   display: flex;
   width: 100%;
-
+    
   flex-direction: column;
 }
 .gpt3__footer-heading {
